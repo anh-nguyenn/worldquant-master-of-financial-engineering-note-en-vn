@@ -36,7 +36,7 @@ export default function LanguageContent({
         .replace(/\n/g, "<br>");
 
       // Wrap list items in ul tags
-      html = html.replace(/(<li>.*<\/li>)/gs, "<ul>$1</ul>");
+      html = html.replace(/(<li>.*?<\/li>)/gs, "<ul>$1</ul>");
 
       setHtmlContent(html);
     };
